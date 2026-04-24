@@ -1,0 +1,21 @@
+name: test workflow
+on:
+  workflow_dispatch:
+env:
+  MY_NAME: "kamal"
+  MY_JOB: "DevOps"
+jobs:
+   job1:
+      runs-on: ubuntu-latest
+      steps:
+      - name: env example 1
+        run: |
+          echo "hai ${{ env.MY_NAME}}"
+      - name: env example 2
+        run: |
+           echo "hai ${{ env.MY_JOB}}"
+          
+      
+
+      
+        
